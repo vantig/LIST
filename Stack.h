@@ -48,13 +48,14 @@ T Stack<T>::pop()
 	}
 	else
 	{
-		std::cout << "Steck is empty\n ";
+		std::cout << "Stack is empty\n ";
 		return T();
 	}
 }
 template<class T>
 void Stack<T>::print()const
 {
+
 	for (Node<T>* i = List<T>::getTail(); i!=nullptr; i=i->prev)
 	{
 		std::cout << i->data << " ";
